@@ -1,0 +1,74 @@
+version: '3.8'
+
+volumes:
+  mysql:
+    driver: local
+
+services:
+    gateway:
+      build: ./gateway
+      volumes:
+        - ./gateway:/go/src/app
+      working_dir: /go/src/app
+      environment:
+        - PORT=8888
+        - LOG_FILE=webapp.log
+      ports:
+        - "8888:8888"
+      tty: true
+
+    app1:
+      build: ./user
+      volumes:
+        - ./user:/go/src/app
+      working_dir: /go/src/app
+      environment:
+        - TZ=Asia/Tokyo
+        - ENV=development
+        - LOG_FILE=webapp.log
+        - RDB_DRIVER=mysql
+        - RDB_NAME=app1
+        - RDB_USER=root
+        - RDB_PASSWORD=root
+        - RDB_ENDPOINT=mysql
+      ports:
+        - "8080:8080"
+      tty: true
+      depends_on:
+        - mysql
+
+    app2:
+      build: ./group
+      volumes:
+        - ./group:/go/src/app
+      working_dir: /go/src/app
+      environment:
+        - TZ=Asia/Tokyo
+        - ENV=development
+        - LOG_FILE=webapp.log
+        - RDB_DRIVER=mysql
+        - RDB_NAME=app2
+        - RDB_USER=root
+        - RDB_PASSWORD=root
+        - RDB_ENDPOINT=mysql
+      ports:
+        - "8081:8081"
+      tty: true
+      depends_on:
+        - mysql
+
+    mysql:
+      build: ./mysql
+      platform: linux/amd64 # for M1 tip
+      environment:
+        - TZ=Asia/Tokyo
+        - MYSQL_DATABASE=ent
+        - MYSQL_USER=ent
+        - MYSQL_PASSWORD=ent
+        - MYSQL_ROOT_PASSWORD=root
+#      restart: always
+      ports:
+        - "3306:3306"
+      volumes:
+        - ~/.docker/go-graphql-gateway/mysql/data:/var/lib/mysql
+        - ./mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d

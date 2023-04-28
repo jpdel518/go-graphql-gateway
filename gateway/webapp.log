@@ -1,0 +1,559 @@
+2023/04/19 05:44:31 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 05:47:35 schema.resolvers.go:52: Response body: {"code":2000,"data":[{"id":1,"name":"くろグループ","description":"亜jfkdjksjfかdl；fjdかsjf；あ","created_at":"2023-04-18T12:38:19Z","updated_at":"2023-04-18T12:38:19Z"}]}
+2023/04/19 05:47:35 schema.resolvers.go:55: Error unmarshalling response body: json: cannot unmarshal object into Go value of type []*model.Group
+2023/04/19 05:47:36 schema.resolvers.go:52: Response body: {"code":2000,"data":[{"id":1,"name":"くろグループ","description":"亜jfkdjksjfかdl；fjdかsjf；あ","created_at":"2023-04-18T12:38:19Z","updated_at":"2023-04-18T12:38:19Z"}]}
+2023/04/19 05:47:36 schema.resolvers.go:55: Error unmarshalling response body: json: cannot unmarshal object into Go value of type []*model.Group
+2023/04/19 17:18:26 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 17:21:58 schema.resolvers.go:52: Response body: {"code":2000,"data":[{"id":1,"name":"くろグループ","description":"亜jfkdjksjfかdl；fjdかsjf；あ","created_at":"2023-04-18T12:38:19Z","updated_at":"2023-04-18T12:38:19Z"}]}
+2023/04/19 17:21:58 schema.resolvers.go:59: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 17:59:54 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:01:05 schema.resolvers.go:53: Response body: {"code":2000,"data":[{"id":1,"name":"くろグループ","description":"亜jfkdjksjfかdl；fjdかsjf；あ","created_at":"2023-04-18T12:38:19Z","updated_at":"2023-04-18T12:38:19Z"}]}
+2023/04/19 18:01:05 schema.resolvers.go:60: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 18:01:05 schema.resolvers.go:71: Error getting code: 2000 groups: [map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]
+2023/04/19 18:02:23 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:03:10 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:03:16 schema.resolvers.go:52: Response body: {"code":2000,"data":[{"id":1,"name":"くろグループ","description":"亜jfkdjksjfかdl；fjdかsjf；あ","created_at":"2023-04-18T12:38:19Z","updated_at":"2023-04-18T12:38:19Z"}]}
+2023/04/19 18:03:16 schema.resolvers.go:59: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 18:03:16 schema.resolvers.go:70: Error getting code: 2000 groups: [map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]
+2023/04/19 18:08:26 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:08:35 schema.resolvers.go:52: Response body: {"code":2000,"data":[{"id":1,"name":"くろグループ","description":"亜jfkdjksjfかdl；fjdかsjf；あ","created_at":"2023-04-18T12:38:19Z","updated_at":"2023-04-18T12:38:19Z"}]}
+2023/04/19 18:08:35 schema.resolvers.go:59: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 18:10:13 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:10:17 schema.resolvers.go:53: Response body: {"code":2000,"data":[{"id":1,"name":"くろグループ","description":"亜jfkdjksjfかdl；fjdかsjf；あ","created_at":"2023-04-18T12:38:19Z","updated_at":"2023-04-18T12:38:19Z"}]}
+2023/04/19 18:10:17 schema.resolvers.go:60: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 18:16:18 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:16:46 schema.resolvers.go:51: Response body: {"code":2000,"data":[{"id":1,"name":"くろグループ","description":"亜jfkdjksjfかdl；fjdかsjf；あ","created_at":"2023-04-18T12:38:19Z","updated_at":"2023-04-18T12:38:19Z"}]}
+2023/04/19 18:16:46 schema.resolvers.go:58: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 18:16:46 schema.resolvers.go:70: Error getting code: 2000 groups: [map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]
+2023/04/19 18:25:19 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:25:42 schema.resolvers.go:52: Response body: {"code":2000,"data":[{"id":1,"name":"くろグループ","description":"亜jfkdjksjfかdl；fjdかsjf；あ","created_at":"2023-04-18T12:38:19Z","updated_at":"2023-04-18T12:38:19Z"}]}
+2023/04/19 18:25:42 schema.resolvers.go:59: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 18:27:22 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:27:37 schema.resolvers.go:51: Response body: {"code":2000,"data":[{"id":1,"name":"くろグループ","description":"亜jfkdjksjfかdl；fjdかsjf；あ","created_at":"2023-04-18T12:38:19Z","updated_at":"2023-04-18T12:38:19Z"}]}
+2023/04/19 18:27:37 schema.resolvers.go:58: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 18:27:37 schema.resolvers.go:70: float64
+2023/04/19 18:27:37 schema.resolvers.go:71: Error getting code: 2000 groups: [map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]
+2023/04/19 18:30:16 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:31:44 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:31:49 schema.resolvers.go:54: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 18:31:49 schema.resolvers.go:66: json.Number
+2023/04/19 18:31:49 schema.resolvers.go:67: Error getting code: 2000 groups: [map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]
+2023/04/19 18:33:22 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:33:27 schema.resolvers.go:54: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 18:39:10 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:39:22 schema.resolvers.go:54: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 18:39:22 schema.resolvers.go:69: Success getting code: 2000
+2023/04/19 18:50:24 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/19 18:50:26 schema.resolvers.go:33: Error sending request: Get "http://app2:8081/api/groups": dial tcp 172.18.0.5:8081: connect: connection refused
+2023/04/19 18:50:32 schema.resolvers.go:46: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/19 18:50:34 schema.resolvers.go:46: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/20 09:43:39 schema.resolvers.go:46: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/20 09:44:21 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/20 09:44:53 schema.resolvers.go:47: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/20 09:44:53 schema.resolvers.go:75: Success getting code: 2000
+2023/04/20 12:13:06 schema.resolvers.go:47: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/20 12:13:06 schema.resolvers.go:75: Success getting code: 2000
+2023/04/20 12:15:29 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/20 12:16:46 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/20 12:33:52 schema.resolvers.go:48: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/20 14:38:11 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/20 14:38:49 schema.resolvers.go:48: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/20 14:38:49 schema.resolvers.go:70: createdat type: <nil>
+2023/04/20 14:40:04 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/20 14:40:08 schema.resolvers.go:48: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/20 14:40:08 schema.resolvers.go:70: createdat type: 2023-04-18T12:38:19Z
+2023/04/20 14:40:08 schema.resolvers.go:89: Success getting code: 2000
+2023/04/21 02:00:25 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/21 02:06:22 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/21 02:20:48 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/21 02:27:25 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/21 02:29:43 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/21 02:31:41 schema.resolvers.go:26: name: 0x4000112690
+2023/04/21 02:31:41 schema.resolvers.go:27: offset: <nil>
+2023/04/21 02:31:41 schema.resolvers.go:28: limit: <nil>
+2023/04/21 02:31:41 schema.resolvers.go:29: sort: <nil>
+2023/04/21 02:41:35 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/21 02:48:16 schema.resolvers.go:43: URL: http://app2:8081/api/groups?name=&offset=-1&limit=-1&sort=-1
+2023/04/21 02:48:16 schema.resolvers.go:66: Response body: map[code:3000 data:Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1]
+2023/04/21 02:48:16 schema.resolvers.go:86: Error getting code: 3000 groups: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1
+2023/04/21 02:56:42 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/21 02:56:45 schema.resolvers.go:39: URL: http://app2:8081/api/groups?name=
+2023/04/21 02:56:45 schema.resolvers.go:49: Error sending request: Get "http://app2:8081/api/groups?name=": dial tcp 172.18.0.5:8081: connect: connection refused
+2023/04/21 02:56:53 schema.resolvers.go:39: URL: http://app2:8081/api/groups?name=
+2023/04/21 02:56:53 schema.resolvers.go:62: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/21 02:57:08 schema.resolvers.go:39: URL: http://app2:8081/api/groups&offset=0
+2023/04/21 02:57:08 schema.resolvers.go:59: Error unmarshalling response body: invalid character 'H' looking for beginning of value
+2023/04/21 02:57:15 schema.resolvers.go:39: URL: http://app2:8081/api/groups&offset=0
+2023/04/21 02:57:15 schema.resolvers.go:59: Error unmarshalling response body: invalid character 'H' looking for beginning of value
+2023/04/21 02:58:35 schema.resolvers.go:39: URL: http://app2:8081/api/groups
+2023/04/21 02:58:35 schema.resolvers.go:62: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/21 02:58:53 schema.resolvers.go:39: URL: http://app2:8081/api/groups&offset=0&limit=10
+2023/04/21 02:58:53 schema.resolvers.go:59: Error unmarshalling response body: invalid character 'H' looking for beginning of value
+2023/04/21 02:58:54 schema.resolvers.go:39: URL: http://app2:8081/api/groups&offset=0&limit=10
+2023/04/21 02:58:54 schema.resolvers.go:59: Error unmarshalling response body: invalid character 'H' looking for beginning of value
+2023/04/21 02:59:51 schema.resolvers.go:39: URL: http://app2:8081/api/groups
+2023/04/21 02:59:51 schema.resolvers.go:62: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/21 03:00:44 schema.resolvers.go:39: URL: http://app2:8081/api/groups&offset=0&limit=20
+2023/04/21 03:00:44 schema.resolvers.go:59: Error unmarshalling response body: invalid character 'H' looking for beginning of value
+2023/04/21 03:04:18 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/21 03:11:37 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/21 03:12:11 schema.resolvers.go:54: URL: http://app2:8081/api/groups?offset=0&limit=20
+2023/04/21 03:12:11 schema.resolvers.go:77: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/21 03:13:38 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/21 03:13:43 schema.resolvers.go:54: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/21 03:13:43 schema.resolvers.go:77: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 08:49:59 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 08:52:33 schema.resolvers.go:109: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 08:52:33 schema.resolvers.go:132: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 08:52:33 schema.resolvers.go:42: Response body: map[code:2000 data:[]]
+2023/04/23 09:24:57 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 09:25:16 schema.resolvers.go:125: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 09:25:16 schema.resolvers.go:148: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 09:25:18 schema.resolvers.go:125: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 09:25:18 schema.resolvers.go:148: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 09:27:47 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 09:27:56 schema.resolvers.go:125: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 09:27:56 schema.resolvers.go:148: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 09:27:56 schema.resolvers.go:158: data type: []interface {}
+2023/04/23 09:31:34 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 09:31:42 schema.resolvers.go:125: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 09:31:42 schema.resolvers.go:148: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 09:31:42 schema.resolvers.go:158: data type: []interface {}
+2023/04/23 09:32:04 schema.resolvers.go:125: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 09:32:04 schema.resolvers.go:148: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 09:32:04 schema.resolvers.go:158: data type: []interface {}
+2023/04/23 09:47:32 schema.resolvers.go:125: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 09:47:32 schema.resolvers.go:148: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 09:47:32 schema.resolvers.go:158: data type: []interface {}
+2023/04/23 09:48:13 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 09:48:21 schema.resolvers.go:125: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 09:48:21 schema.resolvers.go:148: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 09:48:21 schema.resolvers.go:158: data type: []interface {}
+2023/04/23 10:11:25 schema.resolvers.go:125: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 10:11:25 schema.resolvers.go:148: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 10:11:25 schema.resolvers.go:158: data type: []interface {}
+2023/04/23 10:12:08 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 10:13:40 schema.resolvers.go:188: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 10:13:41 schema.resolvers.go:212: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 10:13:41 schema.resolvers.go:224: data type: []interface {}
+2023/04/23 10:21:00 schema.resolvers.go:121: Response body: map[code:3201 data:strconv.Atoi: parsing "": invalid syntax]
+2023/04/23 10:21:00 schema.resolvers.go:151: Error getting code: 3201 groups: strconv.Atoi: parsing "": invalid syntax
+2023/04/23 10:23:18 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 10:25:08 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 10:25:28 schema.resolvers.go:99: Request body: { abc def 11 aあかさkskfjdk kuro@example.com 1  }
+2023/04/23 10:25:28 schema.resolvers.go:122: Response body: map[code:3201 data:strconv.Atoi: parsing "": invalid syntax]
+2023/04/23 10:25:28 schema.resolvers.go:152: Error getting code: 3201 groups: strconv.Atoi: parsing "": invalid syntax
+2023/04/23 10:30:14 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 10:30:19 schema.resolvers.go:99: Request body: &{ abc def 11 aあかさkskfjdk kuro@example.com 1  }
+2023/04/23 10:30:19 schema.resolvers.go:122: Response body: map[code:3201 data:strconv.Atoi: parsing "": invalid syntax]
+2023/04/23 10:30:19 schema.resolvers.go:152: Error getting code: 3201 groups: strconv.Atoi: parsing "": invalid syntax
+2023/04/23 10:36:18 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 10:36:19 schema.resolvers.go:104: Request body: {"id":"","first_name":"abc","last_name":"def","age":11,"address":"aあかさkskfjdk","email":"kuro@example.com","group_id":1,"created_at":"","updated_at":""}
+2023/04/23 11:03:09 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 13:29:55 schema.resolvers.go:111: Request body: {"id":"","first_name":"abc","last_name":"def","age":11,"address":"aあかさkskfjdk","email":"kuro@example.com","group_id":1,"created_at":"","updated_at":""}
+2023/04/23 13:29:55 schema.resolvers.go:130: Response body: map[code:3201 data:strconv.Atoi: parsing "": invalid syntax]
+2023/04/23 13:29:55 schema.resolvers.go:160: Error getting code: 3201 groups: strconv.Atoi: parsing "": invalid syntax
+2023/04/23 14:09:36 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 14:10:54 schema.resolvers.go:111: Request body: {"id":"","first_name":"abc","last_name":"def","age":11,"address":"aあかさkskfjdk","email":"kuro@example.com","group_id":1,"created_at":"","updated_at":""}
+2023/04/23 14:10:54 schema.resolvers.go:130: Response body: map[code:3201 data:strconv.Atoi: parsing "": invalid syntax]
+2023/04/23 14:10:54 schema.resolvers.go:160: Error getting code: 3201 groups: strconv.Atoi: parsing "": invalid syntax
+2023/04/23 14:16:38 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 14:16:52 schema.resolvers.go:130: Response body: map[code:2000 data:map[address:aあかさkskfjdk age:11 created_at:2023-04-23T23:16:52.106482097+09:00 email:kuro@example.com first_name:abc group_id:1 id:1 last_name:def updated_at:2023-04-23T23:16:52.10648343+09:00]]
+2023/04/23 14:16:52 schema.resolvers.go:142: data type: map[string]interface {}
+2023/04/23 14:17:12 schema.resolvers.go:197: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 14:17:12 schema.resolvers.go:221: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 14:17:12 schema.resolvers.go:233: data type: []interface {}
+2023/04/23 14:17:12 schema.resolvers.go:45: Response body: map[code:2000 data:[map[address:aあかさkskfjdk age:11 created_at:2023-04-23T14:16:52Z email:kuro@example.com first_name:abc group_id:1 id:1 last_name:def updated_at:2023-04-23T14:16:52Z]]]
+2023/04/23 14:17:33 schema.resolvers.go:197: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/23 14:17:33 schema.resolvers.go:221: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/23 14:17:33 schema.resolvers.go:233: data type: []interface {}
+2023/04/23 14:17:33 schema.resolvers.go:45: Response body: map[code:2000 data:[map[address:aあかさkskfjdk age:11 created_at:2023-04-23T14:16:52Z email:kuro@example.com first_name:abc group_id:1 id:1 last_name:def updated_at:2023-04-23T14:16:52Z]]]
+2023/04/23 15:11:48 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 15:13:41 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 15:14:42 schema.resolvers.go:148: Response body: map[code:3201 data:strconv.Atoi: parsing "": invalid syntax]
+2023/04/23 15:14:42 schema.resolvers.go:178: Error getting code: 3201 groups: strconv.Atoi: parsing "": invalid syntax
+2023/04/23 15:16:59 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 15:17:43 schema.resolvers.go:156: Response body: map[code:3201 data:strconv.Atoi: parsing "": invalid syntax]
+2023/04/23 15:17:43 schema.resolvers.go:186: Error getting code: 3201 groups: strconv.Atoi: parsing "": invalid syntax
+2023/04/23 15:23:38 schema.resolvers.go:156: Response body: map[code:3201 data:strconv.Atoi: parsing "": invalid syntax]
+2023/04/23 15:23:38 schema.resolvers.go:186: Error getting code: 3201 groups: strconv.Atoi: parsing "": invalid syntax
+2023/04/23 15:27:45 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 15:28:10 schema.resolvers.go:148: Response body: map[code:2000 data:map[address:aあかさkskfjdk age:12 created_at:2023-04-24T00:28:10.764341924+09:00 email:kuro@example.com first_name:abc2 group_id:1 id:2 last_name:def2 updated_at:2023-04-24T00:28:10.764342966+09:00]]
+2023/04/23 15:28:10 schema.resolvers.go:160: data type: map[string]interface {}
+2023/04/23 16:04:18 schema.resolvers.go:148: Response body: map[code:2000 data:map[address:kanagawa age:39 created_at:2023-04-24T01:04:18.755974636+09:00 email:kuro@example.com first_name:kuro group_id:1 id:3 last_name:jun updated_at:2023-04-24T01:04:18.755981386+09:00]]
+2023/04/23 16:04:18 schema.resolvers.go:160: data type: map[string]interface {}
+2023/04/23 16:05:38 schema.resolvers.go:148: Response body: map[code:2000 data:map[address:kanagawa yokohama age:39 created_at:2023-04-24T01:05:38.93346959+09:00 email:kuro2@example.com first_name:kuros group_id:1 id:4 last_name:junp updated_at:2023-04-24T01:05:38.933470298+09:00]]
+2023/04/23 16:05:38 schema.resolvers.go:160: data type: map[string]interface {}
+2023/04/23 16:12:17 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/23 16:14:52 schema.resolvers.go:148: Response body: map[code:2000 data:map[address:kanagawa yokohama age:38 created_at:2023-04-24T01:14:52.159203221+09:00 email:kuro3@example.com first_name:kurosa group_id:1 id:5 last_name:junpe updated_at:2023-04-24T01:14:52.159211388+09:00]]
+2023/04/23 16:14:52 schema.resolvers.go:160: data type: map[string]interface {}
+2023/04/24 01:25:38 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 01:32:23 schema.resolvers.go:100: CreateUser:  kurosa junpe 0x40001984b8 kanagawa yokohama kuro3@example.com 1 &{0x4000192440 computer10_businesswoman.png 99482 image/png}
+2023/04/24 01:32:24 schema.resolvers.go:103: before alloc memory 926600
+2023/04/24 01:32:24 schema.resolvers.go:104: before total alloc memory 926600
+2023/04/24 01:32:24 schema.resolvers.go:105: before system memory 7978000
+2023/04/24 01:32:24 schema.resolvers.go:122: after alloc memory 926600
+2023/04/24 01:32:24 schema.resolvers.go:123: after total alloc memory 926600
+2023/04/24 01:32:24 schema.resolvers.go:124: after system memory 7978000
+2023/04/24 01:32:24 schema.resolvers.go:142: end alloc memory 926600
+2023/04/24 01:32:24 schema.resolvers.go:143: end total alloc memory 926600
+2023/04/24 01:32:24 schema.resolvers.go:144: end system memory 7978000
+2023/04/24 01:32:24 schema.resolvers.go:164: Response body: map[code:2000 data:map[address:kanagawa yokohama age:38 created_at:2023-04-24T10:32:24.034592466+09:00 email:kuro3@example.com first_name:kurosa group_id:1 id:6 last_name:junpe updated_at:2023-04-24T10:32:24.034593799+09:00]]
+2023/04/24 01:32:24 schema.resolvers.go:176: data type: map[string]interface {}
+2023/04/24 01:55:22 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 01:57:33 schema.resolvers.go:100: CreateUser:  kurosaw junpei 0x40000265f8 kanagawa yokohama kanazawa kuro4@example.com 1 &{0x400001f940 computer_server1.png 358346 image/png}
+2023/04/24 01:57:33 schema.resolvers.go:103: before alloc memory 2391344
+2023/04/24 01:57:33 schema.resolvers.go:104: before total alloc memory 2391344
+2023/04/24 01:57:33 schema.resolvers.go:105: before system memory 12434448
+2023/04/24 01:57:33 schema.resolvers.go:123: after alloc memory 3702616
+2023/04/24 01:57:33 schema.resolvers.go:124: after total alloc memory 3702616
+2023/04/24 01:57:33 schema.resolvers.go:125: after system memory 12434448
+2023/04/24 01:57:33 schema.resolvers.go:144: end alloc memory 3706448
+2023/04/24 01:57:33 schema.resolvers.go:145: end total alloc memory 3706448
+2023/04/24 01:57:33 schema.resolvers.go:146: end system memory 12434448
+2023/04/24 01:57:33 schema.resolvers.go:166: Response body: map[code:2000 data:map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T10:57:33.451879096+09:00 email:kuro4@example.com first_name:kurosaw group_id:1 id:7 last_name:junpei updated_at:2023-04-24T10:57:33.451880554+09:00]]
+2023/04/24 01:57:33 schema.resolvers.go:178: data type: map[string]interface {}
+2023/04/24 03:09:34 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 03:10:58 schema.resolvers.go:100: CreateUser:  kurosaw junpei 0x40000b4578 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400009f8f0 computer10_businesswoman.png 99482 image/png}
+2023/04/24 03:10:58 schema.resolvers.go:103: before alloc memory 924896
+2023/04/24 03:10:58 schema.resolvers.go:104: before total alloc memory 924896
+2023/04/24 03:10:58 schema.resolvers.go:105: before system memory 7978000
+2023/04/24 03:10:58 schema.resolvers.go:123: after alloc memory 1253192
+2023/04/24 03:10:58 schema.resolvers.go:124: after total alloc memory 1253192
+2023/04/24 03:10:58 schema.resolvers.go:125: after system memory 7978000
+2023/04/24 03:10:58 schema.resolvers.go:144: end alloc memory 1257024
+2023/04/24 03:10:58 schema.resolvers.go:145: end total alloc memory 1257024
+2023/04/24 03:10:58 schema.resolvers.go:146: end system memory 7978000
+2023/04/24 03:10:58 schema.resolvers.go:166: Response body: map[code:3200 data:open ./uploadfiles/1682305858564885176.png: no such file or directory]
+2023/04/24 03:10:58 schema.resolvers.go:196: Error getting code: 3200 groups: open ./uploadfiles/1682305858564885176.png: no such file or directory
+2023/04/24 03:14:14 schema.resolvers.go:100: CreateUser:  kurosaw junpei 0x4000102528 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400010a570 computer10_businesswoman.png 99482 image/png}
+2023/04/24 03:14:14 schema.resolvers.go:103: before alloc memory 2077112
+2023/04/24 03:14:14 schema.resolvers.go:104: before total alloc memory 2077112
+2023/04/24 03:14:14 schema.resolvers.go:105: before system memory 12696592
+2023/04/24 03:14:14 schema.resolvers.go:123: after alloc memory 2398760
+2023/04/24 03:14:14 schema.resolvers.go:124: after total alloc memory 2398760
+2023/04/24 03:14:14 schema.resolvers.go:125: after system memory 12696592
+2023/04/24 03:14:14 schema.resolvers.go:144: end alloc memory 2402592
+2023/04/24 03:14:14 schema.resolvers.go:145: end total alloc memory 2402592
+2023/04/24 03:14:14 schema.resolvers.go:146: end system memory 12696592
+2023/04/24 03:14:14 schema.resolvers.go:166: Response body: map[code:3200 data:open ./uploadfiles/1682306054376308794.png: no such file or directory]
+2023/04/24 03:14:14 schema.resolvers.go:196: Error getting code: 3200 groups: open ./uploadfiles/1682306054376308794.png: no such file or directory
+2023/04/24 03:36:29 schema.resolvers.go:100: CreateUser:  kurosaw junpei 0x4000026378 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400001e4c0 computer10_businesswoman.png 99482 image/png}
+2023/04/24 03:36:29 schema.resolvers.go:103: before alloc memory 3022288
+2023/04/24 03:36:29 schema.resolvers.go:104: before total alloc memory 3022288
+2023/04/24 03:36:29 schema.resolvers.go:105: before system memory 12696592
+2023/04/24 03:36:29 schema.resolvers.go:123: after alloc memory 3343936
+2023/04/24 03:36:29 schema.resolvers.go:124: after total alloc memory 3343936
+2023/04/24 03:36:29 schema.resolvers.go:125: after system memory 12696592
+2023/04/24 03:36:29 schema.resolvers.go:144: end alloc memory 3347768
+2023/04/24 03:36:29 schema.resolvers.go:145: end total alloc memory 3347768
+2023/04/24 03:36:29 schema.resolvers.go:146: end system memory 12696592
+2023/04/24 03:36:29 schema.resolvers.go:166: Response body: map[code:3200 data:open ./uploadfiles/1682307389698483385.png: no such file or directory]
+2023/04/24 03:36:29 schema.resolvers.go:196: Error getting code: 3200 groups: open ./uploadfiles/1682307389698483385.png: no such file or directory
+2023/04/24 03:38:52 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 03:40:11 schema.resolvers.go:100: CreateUser:  kurosaw junpei 0x40001164b8 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400011e440 computer10_businesswoman.png 99482 image/png}
+2023/04/24 03:40:11 schema.resolvers.go:103: before alloc memory 927472
+2023/04/24 03:40:11 schema.resolvers.go:104: before total alloc memory 927472
+2023/04/24 03:40:11 schema.resolvers.go:105: before system memory 7715856
+2023/04/24 03:40:11 schema.resolvers.go:123: after alloc memory 1255768
+2023/04/24 03:40:11 schema.resolvers.go:124: after total alloc memory 1255768
+2023/04/24 03:40:11 schema.resolvers.go:125: after system memory 7978000
+2023/04/24 03:40:11 schema.resolvers.go:144: end alloc memory 1259600
+2023/04/24 03:40:11 schema.resolvers.go:145: end total alloc memory 1259600
+2023/04/24 03:40:11 schema.resolvers.go:146: end system memory 7978000
+2023/04/24 03:40:11 schema.resolvers.go:166: Response body: map[code:2000 data:map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T12:40:11.077575793+09:00 email:kuro5@example.com first_name:kurosaw group_id:1 id:8 last_name:junpei updated_at:2023-04-24T12:40:11.077576584+09:00]]
+2023/04/24 03:40:11 schema.resolvers.go:178: data type: map[string]interface {}
+2023/04/24 03:41:11 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 03:42:00 schema.resolvers.go:100: CreateUser:  kurosaw junpei 0x40000265f8 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400001f940 computer10_businesswoman.png 99482 image/png}
+2023/04/24 03:42:00 schema.resolvers.go:103: before alloc memory 925840
+2023/04/24 03:42:00 schema.resolvers.go:104: before total alloc memory 925840
+2023/04/24 03:42:00 schema.resolvers.go:105: before system memory 7978000
+2023/04/24 03:42:00 schema.resolvers.go:123: after alloc memory 1254136
+2023/04/24 03:42:00 schema.resolvers.go:124: after total alloc memory 1254136
+2023/04/24 03:42:00 schema.resolvers.go:125: after system memory 7978000
+2023/04/24 03:42:00 schema.resolvers.go:144: end alloc memory 1257968
+2023/04/24 03:42:00 schema.resolvers.go:145: end total alloc memory 1257968
+2023/04/24 03:42:00 schema.resolvers.go:146: end system memory 7978000
+2023/04/24 03:42:00 schema.resolvers.go:166: Response body: map[code:2000 data:map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T12:42:00.329045385+09:00 email:kuro5@example.com first_name:kurosaw group_id:1 id:9 last_name:junpei updated_at:2023-04-24T12:42:00.329045927+09:00]]
+2023/04/24 03:42:00 schema.resolvers.go:178: data type: map[string]interface {}
+2023/04/24 03:42:24 schema.resolvers.go:100: CreateUser:  kurosaw junpei 0x4000026e38 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x4000112ba0 computer10_businesswoman.png 99482 image/png}
+2023/04/24 03:42:24 schema.resolvers.go:103: before alloc memory 2080104
+2023/04/24 03:42:24 schema.resolvers.go:104: before total alloc memory 2080104
+2023/04/24 03:42:24 schema.resolvers.go:105: before system memory 7978000
+2023/04/24 03:42:24 schema.resolvers.go:123: after alloc memory 2401752
+2023/04/24 03:42:24 schema.resolvers.go:124: after total alloc memory 2401752
+2023/04/24 03:42:24 schema.resolvers.go:125: after system memory 7978000
+2023/04/24 03:42:24 schema.resolvers.go:144: end alloc memory 2405584
+2023/04/24 03:42:24 schema.resolvers.go:145: end total alloc memory 2405584
+2023/04/24 03:42:24 schema.resolvers.go:146: end system memory 7978000
+2023/04/24 03:42:24 schema.resolvers.go:166: Response body: map[code:2000 data:map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T12:42:24.777783466+09:00 email:kuro5@example.com first_name:kurosaw group_id:1 id:10 last_name:junpei updated_at:2023-04-24T12:42:24.777784216+09:00]]
+2023/04/24 03:42:24 schema.resolvers.go:178: data type: map[string]interface {}
+2023/04/24 03:44:08 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 03:44:28 schema.resolvers.go:100: CreateUser:  kurosaw junpei 0x4000026728 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400001fa50 computer10_businesswoman.png 99482 image/png}
+2023/04/24 03:44:28 schema.resolvers.go:103: before alloc memory 922416
+2023/04/24 03:44:28 schema.resolvers.go:104: before total alloc memory 922416
+2023/04/24 03:44:28 schema.resolvers.go:105: before system memory 7715856
+2023/04/24 03:44:28 schema.resolvers.go:123: after alloc memory 1250712
+2023/04/24 03:44:28 schema.resolvers.go:124: after total alloc memory 1250712
+2023/04/24 03:44:28 schema.resolvers.go:125: after system memory 7715856
+2023/04/24 03:44:28 schema.resolvers.go:144: end alloc memory 1254544
+2023/04/24 03:44:28 schema.resolvers.go:145: end total alloc memory 1254544
+2023/04/24 03:44:28 schema.resolvers.go:146: end system memory 7715856
+2023/04/24 03:44:28 schema.resolvers.go:166: Response body: map[code:2000 data:map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T12:44:28.426021509+09:00 email:kuro5@example.com first_name:kurosaw group_id:1 id:11 last_name:junpei updated_at:2023-04-24T12:44:28.426022301+09:00]]
+2023/04/24 03:44:28 schema.resolvers.go:178: data type: map[string]interface {}
+2023/04/24 04:05:15 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 04:07:08 schema.resolvers.go:100: CreateUser:  kurosaw junpei 0x4000026518 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400001e480 computer10_businesswoman.png 99482 image/png}
+2023/04/24 04:07:08 schema.resolvers.go:103: before alloc memory 926224
+2023/04/24 04:07:08 schema.resolvers.go:104: before total alloc memory 926224
+2023/04/24 04:07:08 schema.resolvers.go:105: before system memory 8240144
+2023/04/24 04:07:08 schema.resolvers.go:123: after alloc memory 1254520
+2023/04/24 04:07:08 schema.resolvers.go:124: after total alloc memory 1254520
+2023/04/24 04:07:08 schema.resolvers.go:125: after system memory 8240144
+2023/04/24 04:07:08 schema.resolvers.go:144: end alloc memory 1258352
+2023/04/24 04:07:08 schema.resolvers.go:145: end total alloc memory 1258352
+2023/04/24 04:07:08 schema.resolvers.go:146: end system memory 8240144
+2023/04/24 04:07:08 schema.resolvers.go:166: Response body: map[code:2000 data:map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T13:07:08.575052264+09:00 email:kuro5@example.com first_name:kurosaw group_id:1 id:12 last_name:junpei updated_at:2023-04-24T13:07:08.575052805+09:00]]
+2023/04/24 04:07:08 schema.resolvers.go:178: data type: map[string]interface {}
+2023/04/24 04:23:45 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 04:23:57 schema.resolvers.go:100: CreateUser:  kurosaw junpei 0x4000180498 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x4000188430 computer_server1.png 358346 image/png}
+2023/04/24 04:23:57 schema.resolvers.go:103: before alloc memory 2391696
+2023/04/24 04:23:57 schema.resolvers.go:104: before total alloc memory 2391696
+2023/04/24 04:23:57 schema.resolvers.go:105: before system memory 11910160
+2023/04/24 04:24:23 schema.resolvers.go:100: CreateUser:  kurosaw junpei 0x4000026068 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400001e020 computer_server1.png 358346 image/png}
+2023/04/24 04:24:23 schema.resolvers.go:103: before alloc memory 1816384
+2023/04/24 04:24:23 schema.resolvers.go:104: before total alloc memory 4427656
+2023/04/24 04:24:23 schema.resolvers.go:105: before system memory 13024272
+2023/04/24 04:25:12 schema.resolvers.go:100: CreateUser:  kurosawa junpei 0x4000180008 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x4000188010 computer_server1.png 358346 image/png}
+2023/04/24 04:25:12 schema.resolvers.go:103: before alloc memory 1639664
+2023/04/24 04:25:12 schema.resolvers.go:104: before total alloc memory 6459000
+2023/04/24 04:25:12 schema.resolvers.go:105: before system memory 13089808
+2023/04/24 04:30:45 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 04:31:10 schema.resolvers.go:100: CreateUser:  kurosawa junpei 0x4000026600 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400001f940 computer_server1.png 358346 image/png}
+2023/04/24 04:31:10 schema.resolvers.go:103: before alloc memory 2391968
+2023/04/24 04:31:10 schema.resolvers.go:104: before total alloc memory 2391968
+2023/04/24 04:31:10 schema.resolvers.go:105: before system memory 12434448
+2023/04/24 04:31:10 schema.resolvers.go:145: after alloc memory 2394032
+2023/04/24 04:31:10 schema.resolvers.go:146: after total alloc memory 2394032
+2023/04/24 04:31:10 schema.resolvers.go:147: after system memory 12434448
+2023/04/24 04:34:05 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 04:34:07 schema.resolvers.go:100: CreateUser:  kurosawa junpei 0x40000944c0 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400009c440 computer_server1.png 358346 image/png}
+2023/04/24 04:34:07 schema.resolvers.go:103: before alloc memory 2391872
+2023/04/24 04:34:07 schema.resolvers.go:104: before total alloc memory 2391872
+2023/04/24 04:34:07 schema.resolvers.go:105: before system memory 7978000
+2023/04/24 04:34:07 schema.resolvers.go:159: after alloc memory 2394016
+2023/04/24 04:34:07 schema.resolvers.go:160: after total alloc memory 2394016
+2023/04/24 04:34:07 schema.resolvers.go:161: after system memory 7978000
+2023/04/24 04:34:07 schema.resolvers.go:189: end alloc memory 2614272
+2023/04/24 04:34:07 schema.resolvers.go:190: end total alloc memory 2614272
+2023/04/24 04:34:07 schema.resolvers.go:191: end system memory 12434448
+2023/04/24 04:34:07 schema.resolvers.go:132: Error creating part: io: read/write on closed pipe
+2023/04/24 04:39:20 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 04:42:08 schema.resolvers.go:100: CreateUser:  kurosawa junpei 0x4000026500 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400001e470 computer_server1.png 358346 image/png}
+2023/04/24 04:42:08 schema.resolvers.go:103: before alloc memory 2392016
+2023/04/24 04:42:08 schema.resolvers.go:104: before total alloc memory 2392016
+2023/04/24 04:42:08 schema.resolvers.go:105: before system memory 12172304
+2023/04/24 04:42:08 schema.resolvers.go:159: after alloc memory 2394160
+2023/04/24 04:42:08 schema.resolvers.go:160: after total alloc memory 2394160
+2023/04/24 04:42:08 schema.resolvers.go:161: after system memory 12172304
+2023/04/24 04:42:08 schema.resolvers.go:135: copy 358346 bytes from file computer_server1.png in total
+2023/04/24 04:42:08 schema.resolvers.go:189: end alloc memory 2701608
+2023/04/24 04:42:08 schema.resolvers.go:190: end total alloc memory 2701608
+2023/04/24 04:42:08 schema.resolvers.go:191: end system memory 12172304
+2023/04/24 05:19:32 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 05:19:38 schema.resolvers.go:100: Start  CreateUser:  kurosawa junpei 0x4000026500 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400001e470 computer_server1.png 358346 image/png}
+2023/04/24 05:19:38 schema.resolvers.go:103: before alloc memory 2391800
+2023/04/24 05:19:38 schema.resolvers.go:104: before total alloc memory 2391800
+2023/04/24 05:19:38 schema.resolvers.go:105: before system memory 12172304
+2023/04/24 05:19:38 schema.resolvers.go:159: after alloc memory 2393944
+2023/04/24 05:19:38 schema.resolvers.go:160: after total alloc memory 2393944
+2023/04/24 05:19:38 schema.resolvers.go:161: after system memory 12172304
+2023/04/24 05:19:38 schema.resolvers.go:135: copy 358346 bytes from file computer_server1.png in total
+2023/04/24 05:19:38 schema.resolvers.go:189: end alloc memory 2701216
+2023/04/24 05:19:38 schema.resolvers.go:190: end total alloc memory 2701216
+2023/04/24 05:19:38 schema.resolvers.go:191: end system memory 12172304
+2023/04/24 05:21:07 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 05:25:12 schema.resolvers.go:100: Start  CreateUser:  kurosawa junpei 0x4000026600 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400001f940 computer_server1.png 358346 image/png}
+2023/04/24 05:25:12 schema.resolvers.go:103: before alloc memory 2391120
+2023/04/24 05:25:12 schema.resolvers.go:104: before total alloc memory 2391120
+2023/04/24 05:25:12 schema.resolvers.go:105: before system memory 12434448
+2023/04/24 05:25:12 schema.resolvers.go:159: after alloc memory 2393264
+2023/04/24 05:25:12 schema.resolvers.go:160: after total alloc memory 2393264
+2023/04/24 05:25:12 schema.resolvers.go:161: after system memory 12434448
+2023/04/24 05:25:12 schema.resolvers.go:135: copy 358346 bytes from file computer_server1.png in total
+2023/04/24 05:25:12 schema.resolvers.go:189: end alloc memory 2700688
+2023/04/24 05:25:12 schema.resolvers.go:190: end total alloc memory 2700688
+2023/04/24 05:25:12 schema.resolvers.go:191: end system memory 12434448
+2023/04/24 05:25:12 schema.resolvers.go:193: Response: <nil>
+2023/04/24 05:34:24 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 05:35:26 schema.resolvers.go:101: Start  CreateUser:  kurosawa junpei 0x4000026520 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400001e480 computer_server1.png 358346 image/png}
+2023/04/24 05:35:26 schema.resolvers.go:104: before alloc memory 2391464
+2023/04/24 05:35:26 schema.resolvers.go:105: before total alloc memory 2391464
+2023/04/24 05:35:26 schema.resolvers.go:106: before system memory 7715856
+2023/04/24 05:40:12 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 05:40:22 schema.resolvers.go:100: Start  CreateUser:  kurosawa junpei 0x40000b4580 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400009f8f0 computer_server1.png 358346 image/png}
+2023/04/24 05:40:22 schema.resolvers.go:103: before alloc memory 2391120
+2023/04/24 05:40:22 schema.resolvers.go:104: before total alloc memory 2391120
+2023/04/24 05:40:22 schema.resolvers.go:105: before system memory 8240144
+2023/04/24 05:40:22 schema.resolvers.go:159: after alloc memory 2393264
+2023/04/24 05:40:22 schema.resolvers.go:160: after total alloc memory 2393264
+2023/04/24 05:40:22 schema.resolvers.go:161: after system memory 8240144
+2023/04/24 05:40:22 schema.resolvers.go:135: copy 358346 bytes from file computer_server1.png in total
+2023/04/24 05:40:22 schema.resolvers.go:188: Error sending request: Post "http://app1:8080/api/users": io: read/write on closed pipe
+2023/04/24 05:42:32 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/24 05:48:30 schema.resolvers.go:100: Start  CreateUser:  kurosawa junpei 0x40000944b0 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x400009c440 computer_server1.png 358346 image/png}
+2023/04/24 05:48:30 schema.resolvers.go:103: before alloc memory 2391888
+2023/04/24 05:48:30 schema.resolvers.go:104: before total alloc memory 2391888
+2023/04/24 05:48:30 schema.resolvers.go:105: before system memory 12172304
+2023/04/24 05:48:30 schema.resolvers.go:159: after alloc memory 2395392
+2023/04/24 05:48:30 schema.resolvers.go:160: after total alloc memory 2395392
+2023/04/24 05:48:30 schema.resolvers.go:161: after system memory 12434448
+2023/04/24 05:48:30 schema.resolvers.go:135: copy 358346 bytes from file computer_server1.png in total
+2023/04/24 05:48:30 schema.resolvers.go:193: end alloc memory 2701992
+2023/04/24 05:48:30 schema.resolvers.go:194: end total alloc memory 2701992
+2023/04/24 05:48:30 schema.resolvers.go:195: end system memory 12434448
+2023/04/24 05:48:30 schema.resolvers.go:197: Response: &{200 OK 200 HTTP/1.1 1 1 map[Content-Length:[266] Content-Type:[application/json] Date:[Mon, 24 Apr 2023 05:48:30 GMT]] 0x400018ce40 266 [] false false map[] 0x40000aa500 <nil>}
+2023/04/24 05:48:30 schema.resolvers.go:208: Decoded response body: map[code:2000 data:map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T14:48:30.409628509+09:00 email:kuro5@example.com first_name:kurosawa group_id:1 id:17 last_name:junpei updated_at:2023-04-24T14:48:30.409629093+09:00]]
+2023/04/24 05:48:30 schema.resolvers.go:220: data type: map[string]interface {}
+2023/04/24 06:42:29 schema.resolvers.go:275: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/24 06:42:29 schema.resolvers.go:299: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/24 06:42:29 schema.resolvers.go:311: data type: []interface {}
+2023/04/24 06:42:29 schema.resolvers.go:47: Response body: map[code:2000 data:[map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:48:30Z email:kuro5@example.com first_name:kurosawa group_id:1 id:17 last_name:junpei updated_at:2023-04-24T05:48:30Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:40:22Z email:kuro5@example.com first_name:kurosawa group_id:1 id:16 last_name:junpei updated_at:2023-04-24T05:40:22Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:25:12Z email:kuro5@example.com first_name:kurosawa group_id:1 id:15 last_name:junpei updated_at:2023-04-24T05:25:12Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:19:39Z email:kuro5@example.com first_name:kurosawa group_id:1 id:14 last_name:junpei updated_at:2023-04-24T05:19:39Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T04:42:08Z email:kuro5@example.com first_name:kurosawa group_id:1 id:13 last_name:junpei updated_at:2023-04-24T04:42:08Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T04:07:09Z email:kuro5@example.com first_name:kurosaw group_id:1 id:12 last_name:junpei updated_at:2023-04-24T04:07:09Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T03:44:28Z email:kuro5@example.com first_name:kurosaw group_id:1 id:11 last_name:junpei updated_at:2023-04-24T03:44:28Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T03:42:25Z email:kuro5@example.com first_name:kurosaw group_id:1 id:10 last_name:junpei updated_at:2023-04-24T03:42:25Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T03:42:00Z email:kuro5@example.com first_name:kurosaw group_id:1 id:9 last_name:junpei updated_at:2023-04-24T03:42:00Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T03:40:11Z email:kuro5@example.com first_name:kurosaw group_id:1 id:8 last_name:junpei updated_at:2023-04-24T03:40:11Z]]]
+2023/04/26 03:15:28 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 03:18:22 fetch_request.go:56: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/26 03:18:22 group_controller.go:47: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/26 03:18:22 group_controller.go:59: data type: []interface {}
+2023/04/26 03:18:22 fetch_requests.go:69: URL: http://app1:8080/api/users?group=1
+2023/04/26 03:18:22 user_controller.go:101: Response body: map[code:2000 data:[map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:48:30Z email:kuro5@example.com first_name:kurosawa group_id:1 id:17 last_name:junpei updated_at:2023-04-24T05:48:30Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:40:22Z email:kuro5@example.com first_name:kurosawa group_id:1 id:16 last_name:junpei updated_at:2023-04-24T05:40:22Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:25:12Z email:kuro5@example.com first_name:kurosawa group_id:1 id:15 last_name:junpei updated_at:2023-04-24T05:25:12Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:19:39Z email:kuro5@example.com first_name:kurosawa group_id:1 id:14 last_name:junpei updated_at:2023-04-24T05:19:39Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T04:42:08Z email:kuro5@example.com first_name:kurosawa group_id:1 id:13 last_name:junpei updated_at:2023-04-24T04:42:08Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T04:07:09Z email:kuro5@example.com first_name:kurosaw group_id:1 id:12 last_name:junpei updated_at:2023-04-24T04:07:09Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T03:44:28Z email:kuro5@example.com first_name:kurosaw group_id:1 id:11 last_name:junpei updated_at:2023-04-24T03:44:28Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T03:42:25Z email:kuro5@example.com first_name:kurosaw group_id:1 id:10 last_name:junpei updated_at:2023-04-24T03:42:25Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T03:42:00Z email:kuro5@example.com first_name:kurosaw group_id:1 id:9 last_name:junpei updated_at:2023-04-24T03:42:00Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T03:40:11Z email:kuro5@example.com first_name:kurosaw group_id:1 id:8 last_name:junpei updated_at:2023-04-24T03:40:11Z]]]
+2023/04/26 03:19:10 user_controller.go:176: Start  CreateUser:  abc2 def2 0x40000aaff0 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 03:19:10 user_controller.go:181: before alloc memory 1400872
+2023/04/26 03:19:10 user_controller.go:182: before total alloc memory 1400872
+2023/04/26 03:19:10 user_controller.go:183: before system memory 8502288
+2023/04/26 03:20:15 user_controller.go:176: Start  CreateUser:  kurosawa junpei 0x40000ab1c0 kanagawa yokohama kanazawa kuro5@example.com 1 &{0x4000346610 computer_server1.png 358346 image/png}
+2023/04/26 03:20:15 user_controller.go:181: before alloc memory 1005080
+2023/04/26 03:20:15 user_controller.go:182: before total alloc memory 3477832
+2023/04/26 03:20:15 user_controller.go:183: before system memory 13024272
+2023/04/26 03:20:15 store_request.go:68: copy 358346 bytes from file computer_server1.png in total
+2023/04/26 03:20:15 user_controller.go:211: after alloc memory 1106896
+2023/04/26 03:20:15 user_controller.go:212: after total alloc memory 3579648
+2023/04/26 03:20:15 user_controller.go:213: after system memory 13024272
+2023/04/26 03:20:15 user_controller.go:224: Decoded response body: map[code:2000 data:map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-26T12:20:15.389275677+09:00 email:kuro5@example.com first_name:kurosawa group_id:1 id:18 last_name:junpei updated_at:2023-04-26T12:20:15.389276386+09:00]]
+2023/04/26 03:20:15 user_controller.go:236: data type: map[string]interface {}
+2023/04/26 03:23:00 user_controller.go:176: Start  CreateUser:  kurosawa junpei 0x40001d00a8 kanagawa yokohama kanazawa kuro5@example.com 1 <nil>
+2023/04/26 03:23:00 user_controller.go:181: before alloc memory 506288
+2023/04/26 03:23:00 user_controller.go:182: before total alloc memory 3611232
+2023/04/26 03:23:00 user_controller.go:183: before system memory 13089808
+2023/04/26 03:26:01 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 03:27:05 user_controller.go:176: Start  CreateUser:  kurosawa junpei 0x4000026590 kanagawa yokohama kanazawa kuro5@example.com 1 <nil>
+2023/04/26 03:27:05 user_controller.go:181: before alloc memory 391832
+2023/04/26 03:27:05 user_controller.go:182: before total alloc memory 391832
+2023/04/26 03:27:05 user_controller.go:183: before system memory 7715856
+2023/04/26 05:00:23 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 08:25:56 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 09:49:57 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 09:50:02 user_controller.go:176: Start  CreateUser:  abc2 def2 0x40000263b0 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 09:50:02 user_controller.go:181: before alloc memory 996688
+2023/04/26 09:50:02 user_controller.go:182: before total alloc memory 996688
+2023/04/26 09:50:02 user_controller.go:183: before system memory 8240144
+2023/04/26 09:50:02 user_controller.go:211: after alloc memory 1272824
+2023/04/26 09:50:02 user_controller.go:212: after total alloc memory 1272824
+2023/04/26 09:50:02 user_controller.go:213: after system memory 8240144
+2023/04/26 09:50:02 user_controller.go:221: Error unmarshalling response body: EOF
+2023/04/26 09:52:14 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 09:52:23 user_controller.go:176: Start  CreateUser:  abc2 def2 0x400038e210 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 09:52:23 user_controller.go:181: before alloc memory 1004160
+2023/04/26 09:52:23 user_controller.go:182: before total alloc memory 1004160
+2023/04/26 09:52:23 user_controller.go:183: before system memory 8502288
+2023/04/26 09:52:23 user_controller.go:211: after alloc memory 1278784
+2023/04/26 09:52:23 user_controller.go:212: after total alloc memory 1278784
+2023/04/26 09:52:23 user_controller.go:213: after system memory 12696592
+2023/04/26 09:52:23 user_controller.go:216: Response : &{200 OK 200 HTTP/1.1 1 1 map[Content-Length:[0] Content-Type:[application/json] Date:[Wed, 26 Apr 2023 09:52:23 GMT]] {} 0 [] false false map[] 0x4000072500 <nil>}
+2023/04/26 09:52:23 user_controller.go:222: Error unmarshalling response body: EOF
+2023/04/26 09:56:58 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 09:57:02 user_controller.go:176: Start  CreateUser:  abc2 def2 0x40000ac440 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 09:57:02 user_controller.go:181: before alloc memory 1006304
+2023/04/26 09:57:02 user_controller.go:182: before total alloc memory 1006304
+2023/04/26 09:57:02 user_controller.go:183: before system memory 8502288
+2023/04/26 09:57:02 user_controller.go:205: Error sending request: Post "http://app1:8080/api/users": dial tcp 172.22.0.4:8080: connect: connection refused
+2023/04/26 09:57:59 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 09:58:09 user_controller.go:176: Start  CreateUser:  abc2 def2 0x40000b5210 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 09:58:09 user_controller.go:181: before alloc memory 996704
+2023/04/26 09:58:09 user_controller.go:182: before total alloc memory 996704
+2023/04/26 09:58:09 user_controller.go:183: before system memory 7978000
+2023/04/26 09:58:09 user_controller.go:211: after alloc memory 1267936
+2023/04/26 09:58:09 user_controller.go:212: after total alloc memory 1267936
+2023/04/26 09:58:09 user_controller.go:213: after system memory 8240144
+2023/04/26 09:58:09 user_controller.go:216: Response : &{500 Internal Server Error 500 HTTP/1.1 1 1 map[Content-Length:[65] Content-Type:[application/json] Date:[Wed, 26 Apr 2023 09:58:09 GMT]] 0x4000255fc0 65 [] false false map[] 0x400027a300 <nil>}
+2023/04/26 09:58:09 user_controller.go:225: Decoded response body: map[code:3201 data:strconv.Atoi: parsing "": invalid syntax]
+2023/04/26 09:58:09 user_controller.go:240: Error getting code: 3201 user: strconv.Atoi: parsing "": invalid syntax
+2023/04/26 09:58:57 user_controller.go:176: Start  CreateUser:  abc2 def2 0x40000b5370 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 09:58:57 user_controller.go:181: before alloc memory 1299096
+2023/04/26 09:58:57 user_controller.go:182: before total alloc memory 1299096
+2023/04/26 09:58:57 user_controller.go:183: before system memory 8240144
+2023/04/26 09:58:57 user_controller.go:211: after alloc memory 1340264
+2023/04/26 09:58:57 user_controller.go:212: after total alloc memory 1340264
+2023/04/26 09:58:57 user_controller.go:213: after system memory 8240144
+2023/04/26 09:58:57 user_controller.go:216: Response : &{500 Internal Server Error 500 HTTP/1.1 1 1 map[Content-Length:[65] Content-Type:[application/json] Date:[Wed, 26 Apr 2023 09:58:57 GMT]] 0x40001e8100 65 [] false false map[] 0x400027a500 <nil>}
+2023/04/26 09:58:57 user_controller.go:225: Decoded response body: map[code:3201 data:strconv.Atoi: parsing "": invalid syntax]
+2023/04/26 09:58:57 user_controller.go:240: Error getting code: 3201 user: strconv.Atoi: parsing "": invalid syntax
+2023/04/26 10:02:26 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 10:02:33 user_controller.go:176: Start  CreateUser:  abc2 def2 0x40000269b0 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 10:02:33 user_controller.go:181: before alloc memory 998992
+2023/04/26 10:02:33 user_controller.go:182: before total alloc memory 998992
+2023/04/26 10:02:33 user_controller.go:183: before system memory 8240144
+2023/04/26 10:02:33 user_controller.go:205: Error sending request: Post "http://app1:8080/api/users": EOF
+2023/04/26 10:03:28 user_controller.go:176: Start  CreateUser:  abc2 def2 0x40000964c0 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 10:03:28 user_controller.go:181: before alloc memory 1294864
+2023/04/26 10:03:28 user_controller.go:182: before total alloc memory 1294864
+2023/04/26 10:03:28 user_controller.go:183: before system memory 8240144
+2023/04/26 10:03:28 user_controller.go:205: Error sending request: Post "http://app1:8080/api/users": EOF
+2023/04/26 10:04:05 user_controller.go:176: Start  CreateUser:  abc2 def2 0x40001f0130 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 10:04:05 user_controller.go:181: before alloc memory 1374488
+2023/04/26 10:04:05 user_controller.go:182: before total alloc memory 1374488
+2023/04/26 10:04:05 user_controller.go:183: before system memory 8502288
+2023/04/26 10:04:05 user_controller.go:205: Error sending request: Post "http://app1:8080/api/users": EOF
+2023/04/26 10:10:18 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 10:10:21 user_controller.go:176: Start  CreateUser:  abc2 def2 0x4000026970 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 10:10:21 user_controller.go:181: before alloc memory 997472
+2023/04/26 10:10:21 user_controller.go:182: before total alloc memory 997472
+2023/04/26 10:10:21 user_controller.go:183: before system memory 8240144
+2023/04/26 10:10:21 user_controller.go:205: Error sending request: Post "http://app1:8080/api/users": dial tcp 172.26.0.4:8080: connect: connection refused
+2023/04/26 10:11:05 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 10:11:25 user_controller.go:176: Start  CreateUser:  abc2 def2 0x4000334770 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 10:11:25 user_controller.go:181: before alloc memory 1422568
+2023/04/26 10:11:25 user_controller.go:182: before total alloc memory 1422568
+2023/04/26 10:11:25 user_controller.go:183: before system memory 12434448
+2023/04/26 10:11:25 user_controller.go:205: Error sending request: Post "http://app1:8080/api/users": EOF
+2023/04/26 10:13:11 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/26 10:13:16 user_controller.go:176: Start  CreateUser:  abc2 def2 0x40003985c0 aあかさkskfjdk kuro@example.com 1 <nil>
+2023/04/26 10:13:16 user_controller.go:181: before alloc memory 1007112
+2023/04/26 10:13:16 user_controller.go:182: before total alloc memory 1007112
+2023/04/26 10:13:16 user_controller.go:183: before system memory 12696592
+2023/04/26 10:13:16 user_controller.go:211: after alloc memory 1278480
+2023/04/26 10:13:16 user_controller.go:212: after total alloc memory 1278480
+2023/04/26 10:13:16 user_controller.go:213: after system memory 12696592
+2023/04/26 10:13:16 user_controller.go:216: Response : &{200 OK 200 HTTP/1.1 1 1 map[Content-Length:[250] Content-Type:[application/json] Date:[Wed, 26 Apr 2023 10:13:16 GMT]] 0x4000130600 250 [] false false map[] 0x40000c8d00 <nil>}
+2023/04/26 10:13:16 user_controller.go:225: Decoded response body: map[code:2000 data:map[address:aあかさkskfjdk age:12 created_at:2023-04-26T19:13:16.923313844+09:00 email:kuro@example.com first_name:abc2 group_id:1 id:20 last_name:def2 updated_at:2023-04-26T19:13:16.923314385+09:00]]
+2023/04/26 10:13:16 user_controller.go:237: data type: map[string]interface {}
+2023/04/26 10:18:40 fetch_request.go:56: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/26 10:18:40 group_controller.go:47: Response body: map[code:2000 data:[map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/26 10:18:40 group_controller.go:59: data type: []interface {}
+2023/04/26 10:18:40 fetch_requests.go:69: URL: http://app1:8080/api/users?group=1
+2023/04/26 10:18:40 user_controller.go:101: Response body: map[code:2000 data:[map[address:aあかさkskfjdk age:12 created_at:2023-04-26T10:13:17Z email:kuro@example.com first_name:abc2 group_id:1 id:20 last_name:def2 updated_at:2023-04-26T10:13:17Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-26T09:49:13Z email:kuro5@example.com first_name:kurosawa group_id:1 id:19 last_name:junpei updated_at:2023-04-26T09:49:13Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-26T03:20:15Z email:kuro5@example.com first_name:kurosawa group_id:1 id:18 last_name:junpei updated_at:2023-04-26T03:20:15Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:48:30Z email:kuro5@example.com first_name:kurosawa group_id:1 id:17 last_name:junpei updated_at:2023-04-24T05:48:30Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:40:22Z email:kuro5@example.com first_name:kurosawa group_id:1 id:16 last_name:junpei updated_at:2023-04-24T05:40:22Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:25:12Z email:kuro5@example.com first_name:kurosawa group_id:1 id:15 last_name:junpei updated_at:2023-04-24T05:25:12Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:19:39Z email:kuro5@example.com first_name:kurosawa group_id:1 id:14 last_name:junpei updated_at:2023-04-24T05:19:39Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T04:42:08Z email:kuro5@example.com first_name:kurosawa group_id:1 id:13 last_name:junpei updated_at:2023-04-24T04:42:08Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T04:07:09Z email:kuro5@example.com first_name:kurosaw group_id:1 id:12 last_name:junpei updated_at:2023-04-24T04:07:09Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T03:44:28Z email:kuro5@example.com first_name:kurosaw group_id:1 id:11 last_name:junpei updated_at:2023-04-24T03:44:28Z]]]
+2023/04/27 02:10:53 group_controller.go:152: Response body: map[code:3205 data:json: cannot unmarshal array into Go struct field Group.description of type string]
+2023/04/27 02:10:53 group_controller.go:167: Error getting code: 3205 groups: json: cannot unmarshal array into Go struct field Group.description of type string
+2023/04/27 02:17:40 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/27 03:34:48 group_controller.go:152: Response body: map[code:2000 data:map[created_at:2023-04-27T12:34:48.839777221+09:00 description:input触ってみました id:2 name:グループ updated_at:2023-04-27T12:34:48.839777846+09:00]]
+2023/04/27 03:34:49 group_controller.go:152: Response body: map[code:2000 data:map[created_at:2023-04-27T12:34:49.136772471+09:00 description:input触ってみました id:3 name:グループ updated_at:2023-04-27T12:34:49.13677293+09:00]]
+2023/04/27 06:59:21 server.go:32: connect to http://localhost:8888/ for GraphQL playground
+2023/04/27 07:00:58 group_resource.go:28: Response body: map[code:2000 data:map[created_at:2023-04-27T16:00:58.552259585+09:00 description:input触ってみました id:4 name:グループ updated_at:2023-04-27T16:00:58.55225971+09:00]]
+2023/04/27 07:01:02 fetch_request.go:56: URL: http://app2:8081/api/groups?offset=0&num=20
+2023/04/27 07:01:02 group_resource.go:59: Response body: map[code:2000 data:[map[created_at:2023-04-27T07:00:59Z description:input触ってみました id:4 name:グループ updated_at:2023-04-27T07:00:59Z] map[created_at:2023-04-27T03:34:49Z description:input触ってみました id:2 name:グループ updated_at:2023-04-27T03:34:49Z] map[created_at:2023-04-27T03:34:49Z description:input触ってみました id:3 name:グループ updated_at:2023-04-27T03:34:49Z] map[created_at:2023-04-18T12:38:19Z description:亜jfkdjksjfかdl；fjdかsjf；あ id:1 name:くろグループ updated_at:2023-04-18T12:38:19Z]]]
+2023/04/27 07:01:02 group_resource.go:71: data type: []interface {}
+2023/04/27 07:01:02 fetch_requests.go:69: URL: http://app1:8080/api/users?group=1
+2023/04/27 07:01:02 fetch_requests.go:69: URL: http://app1:8080/api/users?group=2
+2023/04/27 07:01:02 fetch_requests.go:69: URL: http://app1:8080/api/users?group=3
+2023/04/27 07:01:02 fetch_requests.go:69: URL: http://app1:8080/api/users?group=4
+2023/04/27 07:01:02 user_resource.go:59: Response body: map[code:2000 data:[]]
+2023/04/27 07:01:02 user_resource.go:59: Response body: map[code:2000 data:[]]
+2023/04/27 07:01:02 user_resource.go:59: Response body: map[code:2000 data:[]]
+2023/04/27 07:01:02 user_resource.go:59: Response body: map[code:2000 data:[map[address:aあかさkskfjdk age:12 created_at:2023-04-26T10:13:17Z email:kuro@example.com first_name:abc2 group_id:1 id:20 last_name:def2 updated_at:2023-04-26T10:13:17Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-26T09:49:13Z email:kuro5@example.com first_name:kurosawa group_id:1 id:19 last_name:junpei updated_at:2023-04-26T09:49:13Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-26T03:20:15Z email:kuro5@example.com first_name:kurosawa group_id:1 id:18 last_name:junpei updated_at:2023-04-26T03:20:15Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:48:30Z email:kuro5@example.com first_name:kurosawa group_id:1 id:17 last_name:junpei updated_at:2023-04-24T05:48:30Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:40:22Z email:kuro5@example.com first_name:kurosawa group_id:1 id:16 last_name:junpei updated_at:2023-04-24T05:40:22Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:25:12Z email:kuro5@example.com first_name:kurosawa group_id:1 id:15 last_name:junpei updated_at:2023-04-24T05:25:12Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T05:19:39Z email:kuro5@example.com first_name:kurosawa group_id:1 id:14 last_name:junpei updated_at:2023-04-24T05:19:39Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T04:42:08Z email:kuro5@example.com first_name:kurosawa group_id:1 id:13 last_name:junpei updated_at:2023-04-24T04:42:08Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T04:07:09Z email:kuro5@example.com first_name:kurosaw group_id:1 id:12 last_name:junpei updated_at:2023-04-24T04:07:09Z] map[address:kanagawa yokohama kanazawa age:38 created_at:2023-04-24T03:44:28Z email:kuro5@example.com first_name:kurosaw group_id:1 id:11 last_name:junpei updated_at:2023-04-24T03:44:28Z]]]

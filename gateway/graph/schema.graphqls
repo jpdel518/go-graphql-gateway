@@ -1,0 +1,46 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+scalar DateTime
+scalar Upload
+
+type Group {
+  id: ID!
+  name: String!
+  description: String!
+  users: [User!]!
+  createdAt: String!
+  updatedAt: String!
+}
+
+type User {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  age: Int
+  address: String!
+  email: String!
+  groupId: Int!
+  group: Group!
+  avator: Upload
+  createdAt: String!
+  updatedAt: String!
+}
+
+type Query {
+  groups(name: String, offset: Int, limit: Int, sort: Int): [Group!]!
+  group(id: ID!): Group!
+  users(name: String, offset: Int, limit: Int, sort: Int): [User!]!
+  user(id: ID!): User!
+}
+
+input NewGroup {
+  name: String!
+  description: String!
+}
+
+type Mutation {
+  createGroup(input: NewGroup!): Group!
+  createUser(firstName: String!, lastName: String!, age: Int, address: String!, email: String!, groupId: Int!, avatar: Upload): User!
+}
