@@ -91,8 +91,7 @@ func (h *Handler) GetById(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
 	// get path parameters
-	sub := strings.TrimPrefix(r.URL.Path, "/user")
-	id, err := strconv.Atoi(filepath.Base(sub))
+	id, err := strconv.Atoi(filepath.Base(r.URL.Path))
 	if err != nil {
 		log.Println(err)
 		w.WriteHeader(http.StatusInternalServerError)
