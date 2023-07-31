@@ -28,7 +28,7 @@ type User struct {
 	Address   string          `json:"address"`
 	Email     string          `json:"email"`
 	GroupID   int             `json:"groupId"`
-	Group     *Group          `json:"group"`
+	Group     *Group          `json:"group,omitempty"`
 	Avator    *graphql.Upload `json:"avator,omitempty"`
 	CreatedAt string          `json:"createdAt"`
 	UpdatedAt string          `json:"updatedAt"`

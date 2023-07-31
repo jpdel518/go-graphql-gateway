@@ -7,6 +7,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"io"
 	"strconv"
 	"sync"
 	"sync/atomic"
@@ -39,6 +40,7 @@ type ResolverRoot interface {
 	Group() GroupResolver
 	Mutation() MutationResolver
 	Query() QueryResolver
+	Subscription() SubscriptionResolver
 	User() UserResolver
 }
 
@@ -65,6 +67,10 @@ type ComplexityRoot struct {
 		Groups func(childComplexity int, name *string, offset *int, limit *int, sort *int) int
 		User   func(childComplexity int, id string) int
 		Users  func(childComplexity int, name *string, offset *int, limit *int, sort *int) int
+	}
+
+	Subscription struct {
+		UserCreated func(childComplexity int) int
 	}
 
 	User struct {
@@ -94,6 +100,9 @@ type QueryResolver interface {
 	Group(ctx context.Context, id string) (*model.Group, error)
 	Users(ctx context.Context, name *string, offset *int, limit *int, sort *int) ([]*model.User, error)
 	User(ctx context.Context, id string) (*model.User, error)
+}
+type SubscriptionResolver interface {
+	UserCreated(ctx context.Context) (<-chan *model.User, error)
 }
 type UserResolver interface {
 	Group(ctx context.Context, obj *model.User) (*model.Group, error)
@@ -228,6 +237,13 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 
 		return e.complexity.Query.Users(childComplexity, args["name"].(*string), args["offset"].(*int), args["limit"].(*int), args["sort"].(*int)), true
 
+	case "Subscription.userCreated":
+		if e.complexity.Subscription.UserCreated == nil {
+			break
+		}
+
+		return e.complexity.Subscription.UserCreated(childComplexity), true
+
 	case "User.address":
 		if e.complexity.User.Address == nil {
 			break
@@ -348,6 +364,23 @@ func (e *executableSchema) Exec(ctx context.Context) graphql.ResponseHandler {
 				Data: buf.Bytes(),
 			}
 		}
+	case ast.Subscription:
+		next := ec._Subscription(ctx, rc.Operation.SelectionSet)
+
+		var buf bytes.Buffer
+		return func(ctx context.Context) *graphql.Response {
+			buf.Reset()
+			data := next(ctx)
+
+			if data == nil {
+				return nil
+			}
+			data.MarshalGQL(&buf)
+
+			return &graphql.Response{
+				Data: buf.Bytes(),
+			}
+		}
 
 	default:
 		return graphql.OneShot(graphql.ErrorResponse(ctx, "unsupported GraphQL operation"))
@@ -398,7 +431,7 @@ type User {
   address: String!
   email: String!
   groupId: Int!
-  group: Group!
+  group: Group
   avator: Upload
   createdAt: String!
   updatedAt: String!
@@ -419,6 +452,10 @@ input NewGroup {
 type Mutation {
   createGroup(input: NewGroup!): Group!
   createUser(firstName: String!, lastName: String!, age: Int, address: String!, email: String!, groupId: Int!, avatar: Upload): User!
+}
+
+type Subscription {
+  userCreated: User!
 }
 `, BuiltIn: false},
 }
@@ -1540,6 +1577,88 @@ func (ec *executionContext) fieldContext_Query___schema(ctx context.Context, fie
 	return fc, nil
 }
 
+func (ec *executionContext) _Subscription_userCreated(ctx context.Context, field graphql.CollectedField) (ret func(ctx context.Context) graphql.Marshaler) {
+	fc, err := ec.fieldContext_Subscription_userCreated(ctx, field)
+	if err != nil {
+		return nil
+	}
+	ctx = graphql.WithFieldContext(ctx, fc)
+	defer func() {
+		if r := recover(); r != nil {
+			ec.Error(ctx, ec.Recover(ctx, r))
+			ret = nil
+		}
+	}()
+	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return ec.resolvers.Subscription().UserCreated(rctx)
+	})
+	if err != nil {
+		ec.Error(ctx, err)
+		return nil
+	}
+	if resTmp == nil {
+		if !graphql.HasFieldError(ctx, fc) {
+			ec.Errorf(ctx, "must not be null")
+		}
+		return nil
+	}
+	return func(ctx context.Context) graphql.Marshaler {
+		select {
+		case res, ok := <-resTmp.(<-chan *model.User):
+			if !ok {
+				return nil
+			}
+			return graphql.WriterFunc(func(w io.Writer) {
+				w.Write([]byte{'{'})
+				graphql.MarshalString(field.Alias).MarshalGQL(w)
+				w.Write([]byte{':'})
+				ec.marshalNUser2ᚖgithubᚗcomᚋjpdel518ᚋgoᚑgraphqlᚑgatewayᚋgatewayᚋgraphᚋmodelᚐUser(ctx, field.Selections, res).MarshalGQL(w)
+				w.Write([]byte{'}'})
+			})
+		case <-ctx.Done():
+			return nil
+		}
+	}
+}
+
+func (ec *executionContext) fieldContext_Subscription_userCreated(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+	fc = &graphql.FieldContext{
+		Object:     "Subscription",
+		Field:      field,
+		IsMethod:   true,
+		IsResolver: true,
+		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
+			switch field.Name {
+			case "id":
+				return ec.fieldContext_User_id(ctx, field)
+			case "firstName":
+				return ec.fieldContext_User_firstName(ctx, field)
+			case "lastName":
+				return ec.fieldContext_User_lastName(ctx, field)
+			case "age":
+				return ec.fieldContext_User_age(ctx, field)
+			case "address":
+				return ec.fieldContext_User_address(ctx, field)
+			case "email":
+				return ec.fieldContext_User_email(ctx, field)
+			case "groupId":
+				return ec.fieldContext_User_groupId(ctx, field)
+			case "group":
+				return ec.fieldContext_User_group(ctx, field)
+			case "avator":
+				return ec.fieldContext_User_avator(ctx, field)
+			case "createdAt":
+				return ec.fieldContext_User_createdAt(ctx, field)
+			case "updatedAt":
+				return ec.fieldContext_User_updatedAt(ctx, field)
+			}
+			return nil, fmt.Errorf("no field named %q was found under type User", field.Name)
+		},
+	}
+	return fc, nil
+}
+
 func (ec *executionContext) _User_id(ctx context.Context, field graphql.CollectedField, obj *model.User) (ret graphql.Marshaler) {
 	fc, err := ec.fieldContext_User_id(ctx, field)
 	if err != nil {
@@ -1866,14 +1985,11 @@ func (ec *executionContext) _User_group(ctx context.Context, field graphql.Colle
 		return graphql.Null
 	}
 	if resTmp == nil {
-		if !graphql.HasFieldError(ctx, fc) {
-			ec.Errorf(ctx, "must not be null")
-		}
 		return graphql.Null
 	}
 	res := resTmp.(*model.Group)
 	fc.Result = res
-	return ec.marshalNGroup2ᚖgithubᚗcomᚋjpdel518ᚋgoᚑgraphqlᚑgatewayᚋgatewayᚋgraphᚋmodelᚐGroup(ctx, field.Selections, res)
+	return ec.marshalOGroup2ᚖgithubᚗcomᚋjpdel518ᚋgoᚑgraphqlᚑgatewayᚋgatewayᚋgraphᚋmodelᚐGroup(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_User_group(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4107,6 +4223,26 @@ func (ec *executionContext) _Query(ctx context.Context, sel ast.SelectionSet) gr
 	return out
 }
 
+var subscriptionImplementors = []string{"Subscription"}
+
+func (ec *executionContext) _Subscription(ctx context.Context, sel ast.SelectionSet) func(ctx context.Context) graphql.Marshaler {
+	fields := graphql.CollectFields(ec.OperationContext, sel, subscriptionImplementors)
+	ctx = graphql.WithFieldContext(ctx, &graphql.FieldContext{
+		Object: "Subscription",
+	})
+	if len(fields) != 1 {
+		ec.Errorf(ctx, "must subscribe to exactly one stream")
+		return nil
+	}
+
+	switch fields[0].Name {
+	case "userCreated":
+		return ec._Subscription_userCreated(ctx, fields[0])
+	default:
+		panic("unknown field " + strconv.Quote(fields[0].Name))
+	}
+}
+
 var userImplementors = []string{"User"}
 
 func (ec *executionContext) _User(ctx context.Context, sel ast.SelectionSet, obj *model.User) graphql.Marshaler {
@@ -4173,9 +4309,6 @@ func (ec *executionContext) _User(ctx context.Context, sel ast.SelectionSet, obj
 					}
 				}()
 				res = ec._User_group(ctx, field, obj)
-				if res == graphql.Null {
-					atomic.AddUint32(&invalids, 1)
-				}
 				return res
 			}
 
@@ -4988,6 +5121,13 @@ func (ec *executionContext) marshalOBoolean2ᚖbool(ctx context.Context, sel ast
 	}
 	res := graphql.MarshalBoolean(*v)
 	return res
+}
+
+func (ec *executionContext) marshalOGroup2ᚖgithubᚗcomᚋjpdel518ᚋgoᚑgraphqlᚑgatewayᚋgatewayᚋgraphᚋmodelᚐGroup(ctx context.Context, sel ast.SelectionSet, v *model.Group) graphql.Marshaler {
+	if v == nil {
+		return graphql.Null
+	}
+	return ec._Group(ctx, sel, v)
 }
 
 func (ec *executionContext) unmarshalOInt2ᚖint(ctx context.Context, v interface{}) (*int, error) {

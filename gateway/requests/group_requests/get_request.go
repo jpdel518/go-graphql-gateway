@@ -15,5 +15,5 @@ func NewGetRequest(id *string) *GetRequest {
 }
 
 func (r *GetRequest) MakeEndpoint() string {
-	return fmt.Sprintf("http://app2:8081/api/groups/%v", *r.id)
+	return fmt.Sprintf("http://app2:8081/api/groups/get-by-id/%v", *r.id)
 }

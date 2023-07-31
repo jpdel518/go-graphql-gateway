@@ -7,11 +7,13 @@ package graph
 import (
 	"context"
 	"fmt"
+	"strconv"
+	"strings"
+
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/jpdel518/go-graphql-gateway/gateway/controllers"
 	"github.com/jpdel518/go-graphql-gateway/gateway/graph/model"
 	"github.com/jpdel518/go-graphql-gateway/gateway/internal"
-	"strconv"
 )
 
 // Users is the resolver for the users field.
@@ -29,7 +31,15 @@ func (r *mutationResolver) CreateGroup(ctx context.Context, input model.NewGroup
 // CreateUser is the resolver for the createUser field.
 func (r *mutationResolver) CreateUser(ctx context.Context, firstName string, lastName string, age *int, address string, email string, groupID int, avatar *graphql.Upload) (*model.User, error) {
 	// ユーザー作成
-	return controllers.NewUserController().Store(ctx, firstName, lastName, age, address, email, groupID, avatar)
+	user, err := controllers.NewUserController().Store(ctx, firstName, lastName, age, address, email, groupID, avatar)
+	if user != nil {
+		r.mutex.Lock()
+		for _, ch := range r.userSubscribers {
+			ch <- user
+		}
+		r.mutex.Unlock()
+	}
+	return user, err
 }
 
 // Groups is the resolver for the groups field.
@@ -56,11 +66,21 @@ func (r *queryResolver) User(ctx context.Context, id string) (*model.User, error
 	panic(fmt.Errorf("not implemented: User - user"))
 }
 
+// UserCreated is the resolver for the userCreated field.
+func (r *subscriptionResolver) UserCreated(ctx context.Context) (<-chan *model.User, error) {
+	return controllers.NewUserController().Subscribe(ctx, r.userSubscribers, &r.mutex)
+}
+
 // Group is the resolver for the group field.
 func (r *userResolver) Group(ctx context.Context, obj *model.User) (*model.Group, error) {
 	// ユーザー所属グループ取得
 	groupID := strconv.Itoa(obj.GroupID)
-	return controllers.NewGroupController().Get(ctx, &groupID)
+	group, err := controllers.NewGroupController().Get(ctx, &groupID)
+	if err != nil && strings.Contains(err.Error(), "not found") {
+		// グループが存在しない場合はnilを返す
+		return nil, nil
+	}
+	return group, err
 }
 
 // Group returns internal.GroupResolver implementation.
@@ -72,10 +92,14 @@ func (r *Resolver) Mutation() internal.MutationResolver { return &mutationResolv
 // Query returns internal.QueryResolver implementation.
 func (r *Resolver) Query() internal.QueryResolver { return &queryResolver{r} }
 
+// Subscription returns internal.SubscriptionResolver implementation.
+func (r *Resolver) Subscription() internal.SubscriptionResolver { return &subscriptionResolver{r} }
+
 // User returns internal.UserResolver implementation.
 func (r *Resolver) User() internal.UserResolver { return &userResolver{r} }
 
 type groupResolver struct{ *Resolver }
 type mutationResolver struct{ *Resolver }
 type queryResolver struct{ *Resolver }
+type subscriptionResolver struct{ *Resolver }
 type userResolver struct{ *Resolver }

@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"context"
+	"fmt"
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/jpdel518/go-graphql-gateway/gateway/graph/model"
 	"github.com/jpdel518/go-graphql-gateway/gateway/requests/user_requests"
@@ -9,6 +10,7 @@ import (
 	"log"
 	"net/http"
 	"runtime"
+	"sync"
 )
 
 type UserController struct {
@@ -126,4 +128,31 @@ func (u *UserController) Store(ctx context.Context, firstName string, lastName s
 	// resolve response
 	log.Printf("Response : %v", response)
 	return resources.NewUserResource().Parse(response.Body)
+}
+
+func (c *UserController) Subscribe(ctx context.Context, subscribers map[string]chan<- *model.User, mutex sync.Locker) (<-chan *model.User, error) {
+	// ユーザー作成イベント購読
+	mutex.Lock()
+	defer mutex.Unlock()
+
+	sessionId := ctx.Value("session_id").(string)
+	if _, ok := subscribers[sessionId]; ok {
+		err := fmt.Errorf("already subscribed")
+		log.Printf("Subscribe UserCreated error: %v", err)
+		return nil, err
+	}
+
+	// ユーザー作成イベント購読チャンネル作成
+	ch := make(chan *model.User, 1)
+	subscribers[sessionId] = ch
+
+	// クライアントが接続を閉じたら購読を解除する
+	go func() {
+		<-ctx.Done() // チャネルが閉じられるまで待機
+		mutex.Lock()
+		defer mutex.Unlock()
+		delete(subscribers, sessionId)
+	}()
+
+	return ch, nil
 }

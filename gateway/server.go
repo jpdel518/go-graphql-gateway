@@ -27,7 +27,7 @@ func main() {
 		port = defaultPort
 	}
 
-	srv := handler.NewDefaultServer(internal.NewExecutableSchema(internal.Config{Resolvers: &graph.Resolver{}}))
+	srv := handler.NewDefaultServer(internal.NewExecutableSchema(internal.Config{Resolvers: graph.NewResolver()}))
 
 	// middleware
 	srv.AroundRootFields(func(ctx context.Context, next graphql.RootResolver) graphql.Marshaler {
