@@ -13,6 +13,7 @@ services:
       environment:
         - PORT=8888
         - LOG_FILE=webapp.log
+        - REDIS_HOST=redis:6379
       ports:
         - "8888:8888"
       tty: true
@@ -72,3 +73,10 @@ services:
       volumes:
         - ~/.docker/go-graphql-gateway/mysql/data:/var/lib/mysql
         - ./mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+
+    redis:
+      image: redis:7.0-alpine
+      ports:
+        - "6379:6379"
+      volumes:
+        - ~/.docker/go-graphql-gateway/redis/data:/data
