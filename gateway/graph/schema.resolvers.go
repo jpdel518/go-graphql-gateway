@@ -33,11 +33,10 @@ func (r *mutationResolver) CreateUser(ctx context.Context, firstName string, las
 	// ユーザー作成
 	user, err := controllers.NewUserController().Store(ctx, firstName, lastName, age, address, email, groupID, avatar)
 	if user != nil {
-		r.mutex.Lock()
-		for _, ch := range r.userSubscribers {
-			ch <- user
+		err = r.redisClient.PublishUserAdded(ctx, user)
+		if err != nil {
+			return nil, err
 		}
-		r.mutex.Unlock()
 	}
 	return user, err
 }
