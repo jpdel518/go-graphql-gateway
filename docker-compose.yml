@@ -13,7 +13,7 @@ services:
       environment:
         - PORT=8888
         - LOG_FILE=webapp.log
-        - REDIS_HOST=redis:6379
+        - REDIS_ENDPOINT=redis
       ports:
         - "8888:8888"
       tty: true
