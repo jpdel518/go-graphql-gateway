@@ -2,7 +2,6 @@ package graph
 
 import (
 	"context"
-	"encoding/json"
 	"github.com/jpdel518/go-graphql-gateway/gateway/graph/model"
 	"github.com/jpdel518/go-graphql-gateway/gateway/infrastructure"
 	"log"
@@ -24,7 +23,6 @@ func NewResolver(ctx context.Context) *Resolver {
 	if err := redisClient.TestConnection(ctx); err != nil {
 		log.Fatalf("Error connecting to Redis: %v", err)
 	}
-	pubsub := redisClient.SubscribeUserAdded(ctx)
 
 	r := &Resolver{
 		redisClient:     redisClient,
@@ -32,28 +30,7 @@ func NewResolver(ctx context.Context) *Resolver {
 		mutex:           sync.Mutex{},
 	}
 
-	go func() {
-		// このGoルーチンは、loopを抜けることなく常に実行される
-		pubsubCh := pubsub.Channel()
-
-		// チャンネルからメッセージを受信
-		for msg := range pubsubCh {
-			// 受信したメッセージはJSON形式
-			// JSONを構造体に変換
-			user := &model.User{}
-			if err := json.Unmarshal([]byte(msg.Payload), user); err != nil {
-				log.Printf("Error unmarshalling response body: %v", err)
-				continue
-			}
-
-			// 購読しているクライアントにRedisから受信したメッセージを送信
-			r.mutex.Lock()
-			for _, ch := range r.userSubscribers {
-				ch <- user
-			}
-			r.mutex.Unlock()
-		}
-	}()
+	redisClient.SubscribeUserAdded(ctx, &r.mutex, r.userSubscribers)
 
 	return r
 }

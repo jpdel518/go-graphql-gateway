@@ -8,6 +8,7 @@ import (
 	"github.com/redis/go-redis/v9"
 	"log"
 	"os"
+	"sync"
 )
 
 const (
@@ -48,10 +49,33 @@ func (r *RedisClient) TestConnection(ctx context.Context) error {
 	return nil
 }
 
-func (r *RedisClient) SubscribeUserAdded(ctx context.Context) *redis.PubSub {
+func (r *RedisClient) SubscribeUserAdded(ctx context.Context, mutex *sync.Mutex, subscribers map[string]chan<- *model.User) *redis.PubSub {
 	// チャンネルを購読
 	pubsub := r.client.Subscribe(ctx, redisUserAddedSubscription)
 	r.userPubsub = pubsub
+
+	go func() {
+		// このGoルーチンは、loopを抜けることなく常に実行される
+		pubsubCh := pubsub.Channel()
+
+		// チャンネルからメッセージを受信
+		for msg := range pubsubCh {
+			// 受信したメッセージはJSON形式
+			// JSONを構造体に変換
+			user := &model.User{}
+			if err := json.Unmarshal([]byte(msg.Payload), user); err != nil {
+				log.Printf("Error unmarshalling response body: %v", err)
+				continue
+			}
+
+			// 購読しているクライアントにRedisから受信したメッセージを送信
+			mutex.Lock()
+			for _, ch := range subscribers {
+				ch <- user
+			}
+			mutex.Unlock()
+		}
+	}()
 
 	return pubsub
 }
